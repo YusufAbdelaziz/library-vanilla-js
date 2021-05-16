@@ -14,6 +14,7 @@ Live preview can be found [here][6].
 2. A great answer about centering items in a [container][3].
 3. Input Animations With HTML and CSS by [DevEd][4].
 4. localStorage API docs from [here][5]
+5. While deploying your app using GitHub's pages, you need to make your CSS and JS files path relative to the directory in which you've added `index.html` file, for example you should make it `./style.css` and `./index.js`.
 
 ## License
 

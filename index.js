@@ -43,18 +43,18 @@ function displayBooks() {
     myLibrary.forEach((book, index) =>
       newBooksGrid.appendChild(createBookCard(book, index))
     );
-    if (myLibrary.length === 0) {
-      const emptyLibraryDiv = doc.createElement("div");
-      emptyLibraryDiv.id = "empty-library";
-      const header1 = doc.createElement("p");
-      const header2 = doc.createElement("p");
-      const t1 = doc.createTextNode("Empty library :(");
-      const t2 = doc.createTextNode("Start Adding a new book !");
-      header1.appendChild(t1);
-      header2.appendChild(t2);
-      emptyLibraryDiv.append(header1, header2);
-      doc.body.appendChild(emptyLibraryDiv);
-    }
+  }
+  if (myLibrary.length === 0) {
+    const emptyLibraryDiv = doc.createElement("div");
+    emptyLibraryDiv.id = "empty-library";
+    const header1 = doc.createElement("p");
+    const header2 = doc.createElement("p");
+    const t1 = doc.createTextNode("Empty library :(");
+    const t2 = doc.createTextNode("Start Adding a new book !");
+    header1.appendChild(t1);
+    header2.appendChild(t2);
+    emptyLibraryDiv.append(header1, header2);
+    doc.body.appendChild(emptyLibraryDiv);
   }
 }
 // Creates the book card using other methods as elements generators.
