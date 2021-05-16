@@ -6,13 +6,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Library</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="https://image.flaticon.com/icons/png/512/225/225932.png">
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+  <div class="header-bar">
+    <h1 class="title">Library</h1>
+    <div id="add-button">
+      <p>Add Book</p>
+      <a>+</a>
+    </div>
+  </div>
+  <div class="books-grid"></div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="form">
+        <div class="input-field">
+          <input type="text" name="title" required autocomplete="off">
+          <label for="title" class="label-name">
+            <span class="content-name">Title</span>
+          </label>
+        </div>
+        <div class="input-field">
+          <input type="text" name="author" required autocomplete="off">
+          <label for="author" class="label-name">
+            <span class="content-name">Author</span>
+          </label>
+        </div>
+        <div class="input-field">
+          <input type="number" name="pages" required autocomplete="off">
+          <label for="pages" class="label-name">
+            <span class="content-name">Pages</span>
+          </label>
+        </div>
+
+        <div class="switch-field">
+          <p>Read</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div id="submit-button" class="submit-button">Submit</div>
+    </div>
 </body>
 <script src="index.js"></script>
 
